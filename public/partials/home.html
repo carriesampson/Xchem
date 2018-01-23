@@ -1,2 +1,7 @@
-<h1>Hello Testing</h1>
-{{ctrl.test}}
+<h1>Hello! Here is info from the brain!</h1>
+<div ng-repeat="brain in ctrl.brains">
+  <h1>{{brain.data.ProductName}}</h1>
+  <p>{{brain.PrimaryCategory}}</p>
+  <p>{{brain.SubCategory}}</p>
+  <p>{{brain.ChemicalName}}</p>
+</div>

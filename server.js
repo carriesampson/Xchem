@@ -16,7 +16,6 @@ app.use(morgan('dev'));
 
 //ROUTES
 // app.get('/:token', (req, res) => res.redirect('/'))
-// app.get('/:token/:token', (req, res) => res.redirect('/'))
 
 //LISTENER
 app.listen(PORT, () => {
