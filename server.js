@@ -20,5 +20,5 @@ app.use(morgan('dev'));
 
 //LISTENER
 app.listen(PORT, () => {
-   console.log('Xchem Express OK: ' + PORT);
+   console.log('Xchem Express Server OK: ' + PORT);
 });
