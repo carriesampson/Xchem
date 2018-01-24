@@ -1,4 +1,4 @@
-const app = angular.module('xchem_app', ['ngRoute', 'ngMaterial', 'ui']);
+const app = angular.module('xchem_app', ['ngRoute']);
 
 app.controller("bodyController", ['$http', function($http) {
   this.test = "IT WORKS!!";
