@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Syncopate');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* GLOBAL STYLES */
+
 /* * {
   border: 1px solid gold;
 } */
@@ -12,7 +14,7 @@
   margin: auto;
 }
 
-/* Logo and Top Nav Styles */
+/* LOGO-TOP NAV-FOOTER STYLES */
 
 .navContainer {
   display: flex;
