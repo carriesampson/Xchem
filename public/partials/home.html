@@ -1,10 +1,4 @@
-<h1>One Product: One Chemical</h1>
-<div ng-repeat="brain in ctrl.brains">
-  <h1>{{brain.ProductName}}</h1>
-  <p><strong>Company:&nbsp;</strong>{{brain.CompanyName}}</p>
-  <p><strong>Brand:&nbsp;</strong>{{brain.BrandName}}</p>
-  <p><strong>Category:&nbsp;</strong>{{brain.PrimaryCategory}}</p>
-  <p><strong>Sub Category:&nbsp;</strong>{{brain.SubCategory}}</p>
-  <p><strong>Chemical Name:&nbsp;</strong>{{brain.ChemicalName}}</p>
-  <p><strong>Color, Scent, Flavor Additive:&nbsp;</strong>{{brain.CSF}}</p>
+<h1>Homepage</h1>
+<div ng-repeat="product in ctrl.products">
+  <p><strong>Product:&nbsp;</strong>{{product.ProductName}}</p>
 </div>
