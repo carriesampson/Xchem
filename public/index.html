@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="xchem_app">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Xchem</title>
-    <!-- AngularJS Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
-    <!-- JavaScript -->
-    <script type="text/javascript" src="/js/app.js"></script>
-    <!-- Styles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js" charset="utf-8"></script>
+    <script src="/js/app.js" charset="utf-8"></script>
+    <base href="/" target="_blank">
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body class="body" ng-controller="bodyController as ctrl">
-    <nav ng-include="'partials/nav.html'"></nav>
-    <main ng-include="'partials/home.html'"></main>
-    <footer ng-include="'partials/footer.html'"></footer>
+  <body class="body" ng-app="xchem_app">
+    <nav ng-include="'/partials/nav.html'"></nav>
+    <main ng-view></main>
+    <footer ng-include="'/partials/footer.html'"></footer>
   </body>
 </html>
