@@ -1,17 +1,8 @@
 const app = angular.module('xchem_app', ['ngRoute']);
 
 app.controller("bodyController", ['$http', function($http) {
-  this.test = "IT WORKS!!";
-  this.brains = [];
   this.brands = [];
-
-  $http({
-    method: 'GET',
-    url: 'http://localhost:3000/brains'
-  }).then(function(response) {
-    console.log(response);
-    this.brains = response.data;
-  }.bind(this));
+  this.products = [];
 
   $http({
     method: 'GET',
