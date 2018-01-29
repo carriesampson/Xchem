@@ -1,0 +1,28 @@
+{
+  "name": "xchem",
+  "version": "1.0.0",
+  "description": "Xchem",
+  "main": "server.js",
+  "scripts": {
+    "test": "green"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carriesampson/Xchem.git"
+  },
+  "keywords": [
+    "Xchem"
+  ],
+  "author": "Carrie Sampson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carriesampson/Xchem/issues"
+  },
+  "homepage": "https://github.com/carriesampson/Xchem#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "pretty-error": "^2.1.1"
+  }
+}
