@@ -15,7 +15,8 @@ app.use(express.static( 'public' ));
 app.use(morgan('dev'));
 
 //ROUTES
-// app.get('/:token', (req, res) => res.redirect('/'))
+app.get('/:whatever', (req, res) => res.redirect('/'))
+app.get('/:whatever/:whatever', (req, res) => res.redirect('/'))
 
 //LISTENER
 app.listen(PORT, () => {
