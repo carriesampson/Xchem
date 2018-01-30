@@ -1,2 +1,16 @@
-<h1>Here is 1 Brand</h1>
-<p>Testing!</p>
+Here is
+
+<div>
+  <h1>Brand Name</h1>
+  <p>{{ctrl.oneBrand.brand.BrandName}}</p>
+</div>
+<div>
+  <h3>Product List</h3>
+  <div ng-repeat="products in ctrl.oneBrand">
+    <p>{{ProductName}}</p>
+  </div>
+
+  <h3>Chemical Ingredients</h3>
+  <p>{{ctrl.oneBrand.chemicals}}</p>
+
+</div>
