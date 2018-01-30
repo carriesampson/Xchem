@@ -1,16 +1,11 @@
 const app = angular.module('xchem_app', ['ngRoute']);
+// const api = 'https://xchem-api.herokuapp.com'
 
 app.controller("bodyController", ['$http', function($http) {
   this.allBrands = [];
   this.oneBrand = {};
   this.searchData = '';
-
-  $http({
-    method: 'GET',
-    url: 'http://localhost:3000/brands'
-  }).then(function(response) {
-    this.allBrands = response.data;
-  }.bind(this));
+  this.searchResult = [];
 
   this.processSearch = () => {
     console.log('Search data is: ', this.searchData);
@@ -19,6 +14,7 @@ app.controller("bodyController", ['$http', function($http) {
       url: 'http://localhost:3000/brands?query=' + this.searchData
     }).then(function(response) {
       this.searchResult = response.data;
+      console.log(response.data);
     }.bind(this));
   }
 }]);
