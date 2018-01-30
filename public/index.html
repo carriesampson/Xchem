@@ -9,9 +9,11 @@
     <base href="/" target="_blank">
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body class="body" ng-app="xchem_app">
-    <nav ng-include="'/partials/nav.html'"></nav>
-    <main ng-view></main>
-    <footer ng-include="'/partials/footer.html'"></footer>
+  <body class="body" ng-app="xchem_app" ng-controller="bodyController as ctrl">
+    <div class="bodyContent">
+      <nav ng-include="'/partials/nav.html'"></nav>
+      <main ng-view></main>
+      <footer ng-include="'/partials/footer.html'"></footer>
+    </div>
   </body>
 </html>
