@@ -105,15 +105,64 @@ form {
 }
 
 .searchBar {
-  height: 30px;
+  height: 40px;
   width: 600px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
-.submit:hover {
+.submit:hover,
+.goToOne:hover {
   background-color: lightgreen;
 }
 
+.resultsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.searchIndex {
+  max-width: 400px;
+  padding-left: 30px;
+  padding-right: 5px;
+}
+
+.resultsLine {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.goToOne {
+  height: 25px;
+  margin: 3px;
+}
+
+.showOne {
+  padding-left: 10px;
+}
+
+.oneBrandName {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 22px;
+  color: #409512;
+  font-style: bold;
+}
+
+.oneBrandSubhead {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 14px;
+  color: #409512;
+  font-style: bold;
+  padding-top: 5px;
+}
+
+.oneBrandDetails {
+  font-family: 'Open-sans', sans-serif;
+  color: #361F0F;
+  font-size: 14px;
+}
+
 .footer {
-  margin-top: 40px;
+  margin-top: 80px;
 }

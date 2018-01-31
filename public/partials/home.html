@@ -1,18 +1,20 @@
 <div class="whatIsXchem">
   <h1 class="what-is-xchem">What is Xchem?</h1>
-  <div class="homeParagraph">
-    <p class="home">Xchem is a database of nearly 70,000<sup>&dagger;</sup> brands that manufacture cosmetics and other topical products (including makeup, sunblock, deoderant, baby products, lotions and nail polish just to name a few.) All of these brands have chemical ingredients, which we know &mdash; <strong>but many contain ingredients that are toxic.</strong> Search for your brands to find chemical ingredients, reference our list of toxic ingredients to see what health concerns you should know about.</p>
+</div>
+<div class="homeParagraph">
+  <p class="home">Xchem is a database of nearly 70,000<sup>&dagger;</sup> brands that manufacture cosmetics and other topical products (including makeup, sunblock, deoderant, baby products, lotions and nail polish just to name a few.) All of these brands have chemical ingredients, which we know &mdash; <strong>but many contain ingredients that are toxic.</strong> Search for your brands to find chemical ingredients, reference our list of toxic ingredients to see what health concerns you should know about.</p>
 </div>
 <div class="search">
   <form ng-submit="ctrl.processSearch()">
     <input class="searchBar" type="text" id="BrandName" placeholder="Search by Brand" ng-model="ctrl.searchData">
-    <input type="submit" />
+    <input class="submit" type="submit" />
   </form>
 </div>
-<div>
-  <ul>
-    <li ng-repeat='obj in ctrl.searchResult' ng-click='ctrl.handleClick(obj.id)' ng-show'one-brand.html'>{{obj.BrandName}}</</li>
-  </ul>
-<div>
-<div class="showOne" ng-if="ctrl.showBrand" ng-include="'/partials/one-brand.html'">
+<div class="resultsContainer">
+  <div class="searchIndex">
+      <button class="goToOne" ng-repeat='obj in ctrl.searchResult' ng-click='ctrl.handleClick(obj.id)' ng-show'one-brand.html'>{{obj.BrandName}}</button>
+  </div>
+  <hr class="resultsLine">
+  <div class="showOne" ng-if="ctrl.showBrand" ng-include="'/partials/one-brand.html'">
+  </div>
 </div>

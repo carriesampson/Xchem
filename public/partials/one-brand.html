@@ -1,18 +1,13 @@
-Here is
-
 <div>
-  <h1>Brand Name</h1>
-  <p>{{ctrl.oneBrand.brand.BrandName}}</p>
+  <h1 class="oneBrandName">{{ctrl.oneBrand.brand.BrandName}}</h1>
 </div>
 <div>
-  <h3>Product List</h3>
+  <h3 class="oneBrandSubhead"><u>Products</u></h3>
   <div>
-    <p ng-repeat="product in ctrl.oneBrand.products">{{product.ProductName}}</p>
+    <p class="oneBrandDetails" ng-repeat="product in ctrl.oneBrand.products">{{product.ProductName}}</p>
   </div>
-
-  <h3>Chemical Ingredients</h3>
+  <h3 class="oneBrandSubhead"><u>Chemical Ingredients</u></h3>
   <div>
-    <p ng-repeat="chemical in ctrl.oneBrand.chemicals">{{chemical.ChemicalName}}</p>
+    <p class="oneBrandDetails" ng-repeat="chemical in ctrl.oneBrand.chemicals">{{chemical.ChemicalName}}</p>
   </div>
-
 </div>
