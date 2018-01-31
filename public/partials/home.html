@@ -1,15 +1,14 @@
 <div class="whatIsXchem">
-  <h1>What is Xchem?</h1>
-  <p>Find chemical ingredients in your products, understand any known effects, and act on that information to read labels, and buy safer products for yourself and your family.
-  <p>Our database<sup>&dagger;</sup> includes nearly 70,000 brands of cosmetics, and toiletries including those for sun care, hair care and baby products among many others. Search for your brands to see chemical content.</p>
+  <h1 class="what-is-xchem">What is Xchem?</h1>
+  <div class="homeParagraph">
+    <p class="home">Xchem is a database of nearly 70,000<sup>&dagger;</sup> brands that manufacture cosmetics and other topical products (including makeup, sunblock, deoderant, baby products, lotions and nail polish just to name a few.) All of these brands have chemical ingredients, which we know &mdash; <strong>but many contain ingredients that are toxic.</strong> Search for your brands to find chemical ingredients, reference our list of toxic ingredients to see what health concerns you should know about.</p>
 </div>
 <div class="search">
   <form ng-submit="ctrl.processSearch()">
-    <input type="text" id="BrandName" placeholder="Search by Brand" ng-model="ctrl.searchData">
-    <input type="submit" />
+    <input class="searchBar" type="text" id="BrandName" placeholder="Search by Brand" ng-model="ctrl.searchData">
+    <input class="submit"type="submit" />
   </form>
 </div>
-<p>Submit a brand search for results...</p>
 <div>
   <ul>
     <li ng-repeat='obj in ctrl.searchResult' ng-click='ctrl.handleClick(obj.id)' ng-show'one-brand.html'>{{obj.BrandName}}</</li>

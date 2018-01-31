@@ -26,7 +26,7 @@
   flex-direction: row;
   justify-content: f;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 8px;
 }
 
 .leaf {
@@ -48,10 +48,11 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+
   background-color: #3D220C;
 }
 
@@ -66,7 +67,51 @@
 .links {
   display: flex;
   flex-direction: row;
-  max-width: 800px;
+  max-width: 1000px;
+}
+
+.what-is-xchem {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 18px;
+  color: #409512;
+  font-style: bold;
+  padding-left: 25px;
+  padding-top: 30px;
+  margin-bottom: -10px;
+}
+
+.home {
+  font-family: 'Open-sans', sans-serif;
+  color: #361F0F;
+  font-size: 14px;
+}
+
+.homeParagraph {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 25px;
+  margin-top: 0px;
+}
+
+form {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-drection: row;
+  justify-content: center;
+}
+
+.searchBar {
+  height: 30px;
+  width: 600px;
+  padding-left: 10px;
+}
+
+.submit:hover {
+  background-color: lightgreen;
 }
 
 .footer {
