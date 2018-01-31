@@ -3,15 +3,15 @@
 
 /* GLOBAL STYLES */
 
-/* * {
+* {
   border: 1px solid gold;
-} */
+}
 
 .body {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  margin: auto;
 }
 
 .bodyContent {

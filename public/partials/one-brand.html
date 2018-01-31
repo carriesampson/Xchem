@@ -6,11 +6,13 @@ Here is
 </div>
 <div>
   <h3>Product List</h3>
-  <div ng-repeat="products in ctrl.oneBrand">
-    <p>{{ProductName}}</p>
+  <div>
+    <p ng-repeat="product in ctrl.oneBrand.products">{{product.ProductName}}</p>
   </div>
 
   <h3>Chemical Ingredients</h3>
-  <p>{{ctrl.oneBrand.chemicals}}</p>
+  <div>
+    <p ng-repeat="chemical in ctrl.oneBrand.chemicals">{{chemical.ChemicalName}}</p>
+  </div>
 
 </div>
