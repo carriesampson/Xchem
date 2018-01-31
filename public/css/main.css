@@ -26,6 +26,7 @@
   flex-direction: row;
   justify-content: f;
   padding-top: 10px;
+  padding-left: 20px;
 }
 
 .leaf {
@@ -55,11 +56,17 @@
 }
 
 .navLink {
-  padding: 5px 10px 5px 10px;
+  padding: 5px 15px 5px 15px;
   text-decoration: none;
   font-family: 'Syncopate', sans-serif;
   font-size: 14px;
   color: lightgreen;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
 }
 
 .footer {
