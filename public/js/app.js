@@ -12,7 +12,7 @@ app.controller("bodyController", ['$http', function($http) {
     console.log('Search data is: ', this.searchData);
     $http({
       method: 'GET',
-      url: 'http://localhost:3000/brands?query=' + this.searchData
+      url: 'https://xchem-api.herokuapp.com/brands?query=' + this.searchData
     }).then(function(response) {
       this.searchResult = response.data;
       console.log(response.data);
@@ -23,7 +23,7 @@ app.controller("bodyController", ['$http', function($http) {
     console.log(id);
     $http({
       method: 'GET',
-      url: 'http://localhost:3000/brands/' + id
+      url: 'https://xchem-api.herokuapp.com/brands/' + id
     }).then(function(response) {
       this.oneBrand = response.data;
       this.showBrand = true;
